@@ -1,9 +1,9 @@
 Building CMWCoin
 
-See doc/readme-qt.rst for instructions on building caucasianmineralwaters-qt,
+See doc/readme-qt.rst for instructions on building cmwcoin-qt,
 the intended-for-end-users, nice-graphical-interface, reference
 implementation of CMWCoin.
 
-See doc/build-*.txt for instructions on building caucasianmineralwaters,
+See doc/build-*.txt for instructions on building cmwcoin,
 the intended-for-services, no-graphical-interface, reference
 implementation of CMWCoin.

@@ -78,7 +78,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    if(uri.scheme() != QString("caucasianmineralwaters"))
+    if(uri.scheme() != QString("cmwcoin"))
         return false;
 
     // check if the address is valid
@@ -130,11 +130,11 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
     // Convert CMWCoin:// to CMWCoin:
     //
-    //    Cannot handle this later, because caucasianmineralwaters:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because cmwcoin:// will cause Qt to see the part after // as host,
     //    which will lowercase it (and thus invalidate the address).
-    if(uri.startsWith("caucasianmineralwaters://"))
+    if(uri.startsWith("cmwcoin://"))
     {
-        uri.replace(0, 11, "caucasianmineralwaters:");
+        uri.replace(0, 11, "cmwcoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -360,7 +360,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "caucasianmineralwaters.desktop";
+    return GetAutostartDir() / "cmwcoin.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -398,7 +398,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a caucasianmineralwaters.desktop file to the autostart directory:
+        // Write a cmwcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         optionFile << "Name=CMWCoin\n";
@@ -422,10 +422,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("caucasianmineralwaters-qt") + " " + tr("version") + " " +
+    header = tr("cmwcoin-qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  caucasianmineralwaters-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  cmwcoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -434,7 +434,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("caucasianmineralwaters-qt"));
+    setWindowTitle(tr("cmwcoin-qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in nonbreaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));
