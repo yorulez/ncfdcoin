@@ -1,9 +1,9 @@
-Building SCFDCoin
+Building NCFDCoin
 
-See doc/readme-qt.rst for instructions on building scfdcoin-qt,
+See doc/readme-qt.rst for instructions on building ncfdcoin-qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of SCFDCoin.
+implementation of NCFDCoin.
 
-See doc/build-*.txt for instructions on building scfdcoin,
+See doc/build-*.txt for instructions on building ncfdcoin,
 the intended-for-services, no-graphical-interface, reference
-implementation of SCFDCoin.
+implementation of NCFDCoin.

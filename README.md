@@ -1,9 +1,9 @@
-SCFDCoin (SCFD)
+NCFDCoin (NCFD)
 ===========
 
-git clone https://github.com/yorulez/scfdcoin.git
+git clone https://github.com/yorulez/ncfdcoin.git
 
-cd scfdcoin/src
+cd ncfdcoin/src
 
 ##From Debian & Ubuntu install
 
