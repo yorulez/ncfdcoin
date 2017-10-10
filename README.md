@@ -16,3 +16,12 @@ apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-syste
 ##Install##
 
 make -f makefile.unix
+
+##Install QT
+
+cd ../
+qmake
+make
+
+
+## Happy!##
