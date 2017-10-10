@@ -1,11 +1,11 @@
-NCFDCoin (NCFD)
+NCFDCoin (North-Caucasian Federal District)
 ===========
 
 git clone https://github.com/yorulez/ncfdcoin.git
 
 cd ncfdcoin/src
 
-##From Debian & Ubuntu install
+##  From Debian & Ubuntu install
 
 apt-get install build-essential libssl-dev libdb5.3-dev libdb5.3++-dev libboost-all-dev libqrencode-dev
 
@@ -13,15 +13,14 @@ apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-syste
         libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
         libssl-dev libdb5.1++-dev
 
-##Install##
+## Install
 
 make -f makefile.unix
 
-##Install QT
+## Install QT
 
-cd ../
-qmake
-make
+cd ../ \
+qmake \
+make \
 
-
-## Happy!##
+## Happy!
