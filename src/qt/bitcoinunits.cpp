@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("GEO");
-    case mBTC: return QString("mGEO");
-    case uBTC: return QString::fromUtf8("μGEO");
+    case BTC: return QString("SCFD");
+    case mBTC: return QString("mSCFD");
+    case uBTC: return QString::fromUtf8("μSCFD");
     default: return QString("???");
     }
 }
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("CMWCoin");
-    case mBTC: return QString("milliCMWCoin (1 / 1,000)");
-    case uBTC: return QString("microCMWCoin (1 / 1,000,000)");
+    case BTC: return QString("SCFDCoin");
+    case mBTC: return QString("milliSCFDCoin (1 / 1,000)");
+    case uBTC: return QString("microSCFDCoin (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of CMWCoin is called a "wander."
+//a single unit (.00000001) of SCFDCoin is called a "wander."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)

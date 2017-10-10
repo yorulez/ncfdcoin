@@ -1,7 +1,10 @@
-CMWCoin (CMW)
+SCFDCoin (SCFD)
 ===========
 
-[![Build Status](https://travis-ci.org/RazorLove/cmwcoin.png?branch=master)](https://travis-ci.org/RazorLove/cmwcoin)
+Install Qt from Debian & Uduntu
+
+apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev \
+        libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
+        libssl-dev libdb5.1++-dev
 
 
-Scrypt Hashcash PoW Template# cmwcoin

@@ -1,9 +1,9 @@
-Building CMWCoin
+Building SCFDCoin
 
-See doc/readme-qt.rst for instructions on building cmwcoin-qt,
+See doc/readme-qt.rst for instructions on building scfdcoin-qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of CMWCoin.
+implementation of SCFDCoin.
 
-See doc/build-*.txt for instructions on building cmwcoin,
+See doc/build-*.txt for instructions on building scfdcoin,
 the intended-for-services, no-graphical-interface, reference
-implementation of CMWCoin.
+implementation of SCFDCoin.
